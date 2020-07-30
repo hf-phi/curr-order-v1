@@ -1,0 +1,93 @@
+<!DOCTYPE html> 
+<html> 
+	
+<head> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>課程次序</title> 
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <style>
+    body {
+        min-width:800px;
+    }
+    #main  {
+        width:700px; 
+        margin: 0 auto;
+    }  
+    #sortable1, #sortable2, #sortable3 {
+        border: 1px solid #eee;
+        width: 200px;
+        min-height: 20px;
+        list-style-type: none;
+        margin: 0;
+        padding: 5px 0 0 0;
+        float: left;
+        margin-right: 10px;
+      }
+    #sortable1 li, #sortable2 li, #sortable3 li {
+        margin: 0 5px 5px 5px;
+        padding: 5px;
+        font-size: 1.2em;
+        width: 180px;
+      }
+  </style>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#sortable1, #sortable2 , #sortable3" ).sortable({
+      connectWith: ".connectedSortable"
+    }).disableSelection();
+  } );
+  </script>
+</head> 
+<body> 
+  <div id="main">
+    <ul id="sortable1" class="connectedSortable">
+      <li class="ui-state-default">中一第00章</li>
+      <li class="ui-state-default">中一第01章</li>
+      <li class="ui-state-default">中一第02章</li>
+      <li class="ui-state-default">中一第03章</li>
+      <li class="ui-state-default">中一第04章</li>
+      <li class="ui-state-default">中一第05章</li>
+      <li class="ui-state-default">中一第06章</li>
+      <li class="ui-state-default">中一第07章</li>
+      <li class="ui-state-default">中一第08章</li>
+      <li class="ui-state-default">中一第09章</li>
+      <li class="ui-state-default">中一第10章</li>
+      <li class="ui-state-default">中一第11章</li>
+      <li class="ui-state-default">中一第12章</li>
+    </ul> <!-- end of sortable1-->
+ 
+    <ul id="sortable2" class="connectedSortable">
+      <li class="ui-state-highlight">中二第01章</li>
+      <li class="ui-state-highlight">中二第02章</li>
+      <li class="ui-state-highlight">中二第03章</li>
+      <li class="ui-state-highlight">中二第04章</li>
+      <li class="ui-state-highlight">中二第05章</li>
+      <li class="ui-state-highlight">中二第06章</li>
+      <li class="ui-state-highlight">中二第07章</li>
+      <li class="ui-state-highlight">中二第08章</li>
+      <li class="ui-state-highlight">中二第09章</li>
+      <li class="ui-state-highlight">中二第10章</li>
+      <li class="ui-state-highlight">中二第11章</li>
+      <li class="ui-state-highlight">中二第12章</li>
+    </ul>  <!-- end of sortable2-->
+
+    <ul id="sortable3" class="connectedSortable">
+      <li class="ui-state-highlight2">中三第01章</li>
+      <li class="ui-state-highlight2">中三第02章</li>
+      <li class="ui-state-highlight2">中三第03章</li>
+      <li class="ui-state-highlight2">中三第04章</li>
+      <li class="ui-state-highlight2">中三第05章</li>
+      <li class="ui-state-highlight2">中三第06章</li>
+      <li class="ui-state-highlight2">中三第07章</li>
+      <li class="ui-state-highlight2">中三第08章</li>
+      <li class="ui-state-highlight2">中三第09章</li>
+      <li class="ui-state-highlight2">中三第10章</li>
+      <li class="ui-state-highlight2">中三第11章</li>
+      <li class="ui-state-highlight2">中三第12章</li>
+    </ul>  <!-- end of sortable3-->
+   </div>  <!-- end of "main"-->
+</body> 
+</html> 
